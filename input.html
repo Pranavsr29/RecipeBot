@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Finder</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #d35400;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border: 2px solid #d35400;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+  <script>
+    function sendData() {
+      var inputValue = document.getElementById("recipeInput").value;
+      var result = '{"query":"' + inputValue + '"}';
+      window.external.setResult(result);
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ What's Cooking?</h1>
+    <p>Enter a <strong>dish name</strong> or <strong>main ingredient</strong> you'd like to cook with:</p>
+    <input type="text" id="recipeInput" placeholder="e.g., Chicken, Pasta, Paneer..." />
+    <br><br>
+    <button onclick="sendData()">Find Recipes</button>
+  </div>
+</body>
+</html>
+
