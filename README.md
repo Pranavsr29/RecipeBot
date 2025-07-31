@@ -36,26 +36,5 @@ This bot is ideal for demonstrating beginner-to-intermediate RPA skills, particu
 - Handling dynamic user inputs
 - Creating seamless automation flows for user-facing applications
 
----
 
-## 🚀 Getting Started
-
-> 🖥️ **Requirements**: UiPath Studio (Community or Enterprise Edition)
-
-1. Clone or download the repository.
-2. Open the project in UiPath Studio.
-3. Run the main workflow (`Main.xaml`).
-4. Enter an ingredient when prompted and let the bot fetch relevant recipes.
-
----
-
-## 📸 Demo
-
-*Coming Soon* – GIF or screen recording showing the bot in action.
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
